@@ -9,6 +9,10 @@
   scroll-snap-type: y mandatory;
 }
 
+@mixin scroll-snap-align {
+  scroll-snap-align: start;
+}
+
 @mixin scroll-bar {
   &::-webkit-scrollbar {
     background-color: rgba(60, 47, 47, 0.2);

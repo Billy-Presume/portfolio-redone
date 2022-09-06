@@ -1,3 +1,6 @@
-.portfolio {
+.portfolio-container {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
   background-color: #fe9c8f;
 }

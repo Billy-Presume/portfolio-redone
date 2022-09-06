@@ -1,0 +1,38 @@
+@import "./mixins.scss";
+
+.footer-container {
+  @include overflow;
+  @include overflow-behavior;
+  @include scroll-snap-align;
+  @include scroll-bar;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: fit-content;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100vw;
+    height: fit-content;
+    padding: 15px;
+    background-color: #be9b7b;
+
+    :is(.title) {
+      align-self: flex-start;
+      color: #111f4d;
+    }
+
+    :is(ul) {
+      list-style: none;
+    }
+
+    :is(li) {
+      color: #000d22;
+    }
+  }
+}

@@ -1,31 +1,9 @@
 @import "./mixins.scss";
 
 .layout-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 7%;
-  gap: 0px 0px;
-  grid-template-areas:
-    "main"
-    "footer";
-
-  main {
-    @include overflow;
-    @include overflow-behavior;
-    @include scroll-bar;
-
-    div {
-      min-height: 100vh;
-      min-width: auto;
-      padding: 5px;
-
-      scroll-snap-align: start;
-    }
-  }
-
-  .footer {
-    background-color: #be9b7b;
-  }
+  @include overflow;
+  @include overflow-behavior;
+  @include scroll-bar-hidden;
 
   /* All devices (landscape tablets, 768px and down) */
   @media only screen and (max-width: 768px) {

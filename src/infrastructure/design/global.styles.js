@@ -21,7 +21,12 @@ export const GlobalStyle = createGlobalStyle`
       &::-webkit-scrollbar {
         display: none;
       }
-    }
+  }
+
+  a {
+    text-decoration: none;
+	cursor: pointer;
+  }
 
   code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

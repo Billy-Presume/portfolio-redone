@@ -1,3 +1,6 @@
-.resume {
+.resume-container {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
   background-color: #f6cd61;
 } /*# sourceMappingURL=resume.css.map */

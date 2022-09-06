@@ -1,3 +1,4 @@
+import { Container } from "../infrastructure/design/styled-components";
 import Home from "../views/home/Home.view";
 import About from "../views/about/About.view";
 import Portfolio from "../views/portfolio/Portfolio.view";
@@ -10,19 +11,16 @@ import "../infrastructure/design/layout.scss";
 
 const Layout = () => {
   return (
-    <div className="layout-container">
-      <main>
-        {/* <div className="layout-container-main"> */}
-        <Home />
-        <About />
-        <Portfolio />
-        <Services />
-        <Resume />
-        <Contact />
-        {/* </div> */}
-      </main>
+    <Container className="layout-container">
+      <Home />
+      <About />
+      <Portfolio />
+      <Services />
+      <Resume />
+      <Contact />
+
       <Footer className="footer" />
-    </div>
+    </Container>
   );
 };
 

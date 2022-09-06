@@ -88,25 +88,26 @@ export const fontWeights = {
 };
 
 export const fontSizes = {
-  title: `20px`,
-  body: `16px`,
-  caption: `14px`,
-  subCaption: `12px`,
-  button: `14px`,
+  bigText: "24px",
+  title: "20px",
+  body: "16px",
+  caption: "14px",
+  subCaption: "12px",
+  button: "14px",
 };
 
 export const spacings = {
-  small: `8px`,
-  medium: `16px`,
-  large: `24px`,
-  xlarge: `32px`,
-  xxlarge: `48px`,
+  small: "8px",
+  medium: "12px",
+  large: "16px",
+  xlarge: "20px",
+  xxlarge: "24px",
 };
 
 export const borderRadius = {
-  small: `8px`,
-  medium: `10px`,
-  large: `12px`,
-  xlarge: `14px`,
-  xxlarge: `16px`,
+  small: "8px",
+  medium: "10px",
+  large: "12px",
+  xlarge: "14px",
+  xxlarge: "16px",
 };

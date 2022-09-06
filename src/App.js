@@ -16,11 +16,7 @@ function App() {
     <ThemeContext.Provider value={{ setTheme, theme }}>
       <ThemeProvider theme={currentTheme}>
         <GlobalStyle />
-        <>
-          <Layout>
-            <SiteRoutes />
-          </Layout>
-        </>
+        <Layout />
       </ThemeProvider>
     </ThemeContext.Provider>
   );
