@@ -1,1 +1,1 @@
-This repository holds my redesigned portfolio website built using JavaScript (ES6+), React and Sass. Some techniques such as Code Splitting and other common methods were used to enhance high performance and a pleasant user experience.
+This repository holds my redesigned portfolio website built using JavaScript (ES6+), React and Sass. Some techniques such as Code Splitting and other common methods were used to enhance high performance for a pleasant user experience.

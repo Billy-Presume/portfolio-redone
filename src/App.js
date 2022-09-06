@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { ThemeContext } from "./infrastructure/providers/theme.provider";
+import { Theme } from "./infrastructure/design/themes.styles";
+import { GlobalStyle } from "./infrastructure/design/global.styles";
+import { SiteRoutes } from "./infrastructure/routes/routes";
+import Layout from "./components/Layout.component.jsx";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+  const currentTheme = theme === "light" ? Theme.light : Theme.dark;
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [isError, setIsError] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{ setTheme, theme }}>
+      <ThemeProvider theme={currentTheme}>
+        <GlobalStyle />
+        <>
+          <Layout>
+            <SiteRoutes />
+          </Layout>
+        </>
+      </ThemeProvider>
+    </ThemeContext.Provider>
   );
 }
 
