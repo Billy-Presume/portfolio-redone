@@ -1,6 +1,5 @@
 import {
   Wrapper,
-  Container,
   BasicContainer,
   Separator,
   BodyText,
@@ -11,7 +10,6 @@ import {
   projects,
   socials,
   contact,
-  copyright,
 } from "../infrastructure/data/data";
 
 import "../infrastructure/design/footer.scss";
@@ -20,7 +18,7 @@ const Footer = () => {
   return (
     <Wrapper className="footer-container">
       <div className="container">
-        <BasicContainer className="footer-services">
+        <BasicContainer className="footer-col footer-services">
           <h3 className="title services">Services</h3>
           <ul className="list services-list">
             {services.map(({ name, type, description }, index) => {
@@ -28,7 +26,7 @@ const Footer = () => {
             })}
           </ul>
         </BasicContainer>
-        <BasicContainer className="footer-projects">
+        <BasicContainer className="footer-col footer-projects">
           <h3 className="title projects">Projects</h3>
           <ul className="list projects-list">
             {projects.map(({ name, type, description }, index) => {
@@ -36,7 +34,7 @@ const Footer = () => {
             })}
           </ul>
         </BasicContainer>
-        <BasicContainer className="footer-socials">
+        <BasicContainer className="footer-col footer-socials">
           <h3 className="title socials">Socials</h3>
           <ul className="list socials-list">
             {socials.map(({ name, link }, index) => {
@@ -44,7 +42,7 @@ const Footer = () => {
             })}
           </ul>
         </BasicContainer>
-        <BasicContainer className="footer-contact">
+        <BasicContainer className="footer-col footer-contact">
           <h3 className="title contact">Contact</h3>
           <ul className="list contact-list">
             {contact.map((item, index) => {
@@ -52,15 +50,10 @@ const Footer = () => {
             })}
           </ul>
         </BasicContainer>
-        <BasicContainer className="footer-copyright">
-          <h3 className="title copyright">Copyright</h3>
-          <ul className="list copyright-list">
-            {copyright.map((item, index) => {
-              return <li key={index}>{item}</li>;
-            })}
-          </ul>
-        </BasicContainer>
       </div>
+      <small className="copyright-text">
+        Copyright © 2022 Billy Presume. All Rights Reserved.
+      </small>
     </Wrapper>
   );
 };

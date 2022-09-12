@@ -1,6 +1,40 @@
 .home-container {
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  flex-flow: column;
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
-  background-color: #fffef9;
-} /*# sourceMappingURL=home.css.map */
+  background: url("../../assets/home_images/home_background_img.png") no-repeat center center/cover;
+  background-size: 100% auto;
+}
+.home-container .greetings {
+  position: absolute;
+  left: 10%;
+  bottom: 7%;
+  margin: 0;
+}
+.home-container .greetings .titles span {
+  font-size: 3vw;
+  text-align: left;
+  color: #7d141d;
+}
+.home-container .greetings .titles .ityped-cursor {
+  font-size: 50px;
+  color: #f37735;
+  opacity: 1;
+  -webkit-animation: blink 0.5s infinite;
+  animation: blink 0.5s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=home.css.map */

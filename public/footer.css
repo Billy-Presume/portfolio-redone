@@ -11,12 +11,15 @@
   /* scrollbar itself */
   /* set button(top and bottom of the scrollbar) */
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  overflow-x: wrap;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: aliceblue;
 }
 .footer-container::-webkit-scrollbar {
   background-color: rgba(60, 47, 47, 0.2);
@@ -36,24 +39,26 @@
   display: none;
 }
 .footer-container .container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 15px;
-  background-color: #be9b7b;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 20px;
+  width: 80%;
+  min-height: 100%;
 }
-.footer-container .container :is(.title) {
-  align-self: flex-start;
-  color: #111f4d;
+.footer-container .container .footer-col {
+  padding: 1em;
 }
-.footer-container .container :is(ul) {
+.footer-container .container .footer-col :is(.title) {
+  color: #4681f4;
+}
+.footer-container .container .footer-col :is(ul) {
   list-style: none;
 }
-.footer-container .container :is(li) {
+.footer-container .container .footer-col :is(li) {
   color: #000d22;
+}
+.footer-container .copyright-text {
+  color: #bbb;
+  margin-bottom: 2em;
 } /*# sourceMappingURL=footer.css.map */

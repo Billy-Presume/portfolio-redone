@@ -1,0 +1,4 @@
+img1: <a href="https://www.freepik.com/free-vector/students-watching-webinar-computer-studying-online_13146648.htm#query=instructional%20design&position=5&from_view=search">Image by pch.vector</a> on Freepik
+img2: <a href="https://www.freepik.com/free-vector/group-students-watching-online-webinar_8271020.htm#query=instructional%20design&position=0&from_view=search">Image by pch.vector</a> on Freepik
+img3: <a href="https://www.freepik.com/free-vector/business-team-discussing-ideas-startup_6974855.htm#query=agile%20development&position=6&from_view=search">Image by pch.vector</a> on Freepik
+img4: 

@@ -18,7 +18,7 @@ export const services = [
       "Web Development is a service that provides a comprehensive approach to the design of instructional materials for the classroom.",
   },
   {
-    name: "React & React Native Development",
+    name: "React Development",
     type: "Front End Development",
     description:
       "React & React Native Development is a service that provides a comprehensive approach to the design of instructional materials for the classroom.",
@@ -30,7 +30,7 @@ export const services = [
       "UI/UX Design is a service that provides a comprehensive approach to the design of instructional materials for the classroom.",
   },
   {
-    name: "Data Analysis & Visualization",
+    name: "Data Analysis",
     type: "Data Analysis & Visualization",
     description:
       "Data Analysis & Visualization is a service that provides a comprehensive approach to the design of instructional materials for the classroom.",
@@ -38,6 +38,12 @@ export const services = [
 ];
 
 export const projects = [
+  {
+    name: "Preparing for a Ski Trip",
+    type: "Instructional Design",
+    description:
+      "Designed and developed a complete course using Storyline and Murf AI on how Social Security works and how the Social Security number became the default ID. A post-course analysis revealed that learners gained in-depth knowledge of how Social Security works and how benefits are calculated. Given relevant data, 98% of learners accurately applied the calculation process.",
+  },
   {
     name: "Social Security Course",
     type: "Instructional Design",
@@ -73,11 +79,11 @@ export const projects = [
 export const socials = [
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/billy-presume/",
   },
   {
     name: "Github",
-    link: "https://github.com/",
+    link: "https://github.com/Billy-Presume/Billy-Presume",
   },
   {
     name: "Instagram",
@@ -91,13 +97,8 @@ export const socials = [
 
 export const contact = [
   "Billy Presume",
-  "contact@the-coder-academy.com",
-  "1-800-555-5555",
-  "123 Main St, New York, NY 10001",
-  "Mon-Fri: 9am-5pm",
-];
-
-export const copyright = [
-  `Copyright © 2022 Billy Presume.`,
-  "All Rights Reserved",
+  "billypresume@gmail.com",
+  "+1 (754)-304-9629",
+  "Epworth, GA 30541",
+  "Mon-Fri: 8am-5pm",
 ];
