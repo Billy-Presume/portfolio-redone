@@ -1,7 +1,7 @@
 import "./services.scss";
 
 const Services = () => {
-  return <div className="services-container">Services</div>;
+  return <section id="services-section">Services</section>;
 };
 
 export default Services;

@@ -1,17 +1,19 @@
 #about-section {
   scroll-snap-align: start;
-  width: 100vw;
-  height: 100vh;
   background-color: #121212;
 }
 #about-section .nav-tabs {
-  color: #dc143c !important;
   background-color: #111 !important;
 }
 #about-section .nav-tabs .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #121212 !important;
+  font-size: 1.2vw;
 }
 #about-section .nav-tabs .nav-item button {
+  width: 70%;
   border: none;
   color: #111f4d;
   background-color: #f5ca7b;

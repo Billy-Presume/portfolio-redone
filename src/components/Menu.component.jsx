@@ -1,10 +1,35 @@
-import { Container, Nav, Navbar, Offcanvas, Button } from "react-bootstrap";
+import { useState } from "react";
+import { Document, Page } from "react-pdf";
+import {
+  Container,
+  Nav,
+  Navbar,
+  Offcanvas,
+  Modal,
+  Button,
+} from "react-bootstrap";
+import ResumeModal from "./ResumeModal.component";
 
 import "../infrastructure/design/menu.scss";
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+  const toggleShow = () => setShow(!show);
+
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
+  const handleClose = () => {
+    toggleShow(false);
+  };
+
   return (
     <>
+      {/* {toggleShow && <ResumeModal toggleShow />} */}
       {[false, "sm", "md", "lg", "xl", "xxl"].map((expand) => (
         <Navbar
           key={expand}
@@ -37,7 +62,11 @@ const NavBar = () => {
                   <Nav.Link href="#portfolio-section">Porfolio</Nav.Link>
                   <Nav.Link href="#services-section">Services</Nav.Link>
                   <Nav.Link href="#contact-section">Contact</Nav.Link>
-                  <Button variant="light" className="resume-button">
+                  <Button
+                    variant="light"
+                    className="resume-button"
+                    onClick={toggleShow && <ResumeModal toggleShow />}
+                  >
                     RESUME
                   </Button>
                 </Nav>

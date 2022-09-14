@@ -1,6 +1,4 @@
-.services-container {
-  width: 100vw;
-  height: 100vh;
+#services-section {
   scroll-snap-align: start;
   background-color: #e0ebf9;
 } /*# sourceMappingURL=services.css.map */

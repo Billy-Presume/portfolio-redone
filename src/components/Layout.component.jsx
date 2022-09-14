@@ -3,7 +3,7 @@ import Home from "../views/home/Home.view";
 import About from "../views/about/About.view";
 import Portfolio from "../views/portfolio/Portfolio.view";
 import Services from "../views/services/Services.view";
-import Resume from "../views/resume/Resume.view";
+
 import Contact from "../views/contact/Contact.view";
 import Footer from "./Footer.component";
 
@@ -18,7 +18,7 @@ const Layout = () => {
         <About id="section" />
         <Portfolio id="section" />
         <Services id="section" />
-        <Resume id="section" />
+
         <Contact id="section" />
         <Footer className="footer" />
       </div>

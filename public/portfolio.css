@@ -1,35 +1,126 @@
 #portfolio-section {
   scroll-snap-align: start;
-  width: 100vw;
-  height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   background-color: #fe9c8f;
 }
-#portfolio-section .section-content {
-  min-width: 100vw;
-  min-height: 100vh;
+#portfolio-section .portfolio-video-container {
+  width: 100%;
+  height: 100%;
+}
+#portfolio-section .portfolio-video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+#portfolio-section .portfolio-content {
+  min-width: 100%;
+  min-height: 100%;
   display: grid;
   place-items: center;
   background-color: rgba(255, 238, 173, 0.1);
   -webkit-backdrop-filter: blur(5px) saturate(120%) brightness(100%);
   backdrop-filter: blur(5px) saturate(120%) brightness(100%);
 }
-#portfolio-section .section-content .carousel {
-  width: 100vw;
-  height: 100vh;
+#portfolio-section .portfolio-content .carousel {
+  width: 100%;
+  height: 100%;
   display: grid;
   place-items: center;
-  background-color: #fe9c8f;
 }
-#portfolio-section .section-content :is(.carousel-item) {
-  width: 90%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rosybrown;
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container) {
+  max-width: 80% !important;
+  max-height: 70% !important;
+  position: relative;
+  left: 10%;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content {
+  width: 100% !important;
+  height: 100% !important;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-radius: 8px;
+  background-color: #fff;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  .card-header {
+  font-size: 1.3vw;
+  color: #fff;
+  background-color: #111f4d;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  .card-title {
+  font-weight: 200;
+  color: #026d40;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  .card-body {
+  color: #000d22;
+  background-color: #fbeccf;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  button {
+  width: 10em;
+  margin-left: 40%;
+  border: none;
+  color: aliceblue;
+  background-color: #f37735;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  button:hover {
+  color: #111f4d;
+  background-color: #f5ca7b;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  button:active {
+  color: #111f4d;
+  background-color: aliceblue;
+}
+#portfolio-section
+  .portfolio-content
+  .carousel
+  :is(.carousel-item-content-container)
+  .carousel-item-content
+  img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 } /*# sourceMappingURL=portfolio.css.map */

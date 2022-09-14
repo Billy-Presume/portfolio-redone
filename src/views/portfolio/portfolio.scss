@@ -3,31 +3,96 @@
 #portfolio-section {
   @include scroll-snap-align;
 
-  @include vw-vh-100;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   background-color: #fe9c8f;
 
-  .section-content {
-    @include min-width-height(100vw, 100vh);
+  .portfolio-video-container {
+    @include width-height-100;
+    // background: #fff url() no-repeat center center/cover;
+
+    video {
+      @include width-height-100;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include object-fit-cover;
+    }
+  }
+
+  .portfolio-content {
+    @include min-width-height(100%, 100%);
     @include display-grid-center;
 
     background-color: rgba(255, 238, 173, 0.1);
     backdrop-filter: blur(5px) saturate(120%) brightness(100%);
 
     .carousel {
-      @include custom-width-height(100vw, 100vh);
+      @include custom-width-height(100%, 100%);
       @include display-grid-center;
-      background-color: #fe9c8f;
-    }
-    :is(.carousel-item) {
-      @include custom-width-height(90%, 80%);
-      @include display-flex-center;
-      flex-direction: column;
+      // position: relative;
+      // background-color: #fe9c8f;
 
-      background-color: rosybrown;
+      :is(.carousel-item-content-container) {
+        max-width: 80% !important;
+        max-height: 70% !important;
+        position: relative;
+        left: 10%;
+
+        .carousel-item-content {
+          width: 100% !important;
+          height: 100% !important;
+          display: grid;
+          grid-template-columns: 60% 40%;
+          border-radius: 8px;
+          background-color: #fff;
+
+          .card-header {
+            font-size: 1.3vw;
+            color: #fff;
+            background-color: #111f4d;
+          }
+
+          .card-title {
+            font-weight: 200;
+            color: #026d40;
+          }
+
+          .card-body {
+            color: #000d22;
+
+            background-color: #fbeccf;
+          }
+
+          button {
+            width: 10em;
+            margin-left: 40%;
+            border: none;
+            color: aliceblue;
+
+            background-color: #f37735;
+
+            &:hover {
+              color: #111f4d;
+              background-color: #f5ca7b;
+            }
+
+            &:active {
+              color: #111f4d;
+              background-color: aliceblue;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        }
+      }
     }
   }
 }

@@ -3,8 +3,6 @@
 #home-section {
   @include scroll-snap-align;
 
-  // @include min-width-height(100vw, 100vh);
-
   position: relative;
 
   .video-container {
