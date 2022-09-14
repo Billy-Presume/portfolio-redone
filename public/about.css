@@ -1,6 +1,26 @@
-.about-container {
+#about-section {
+  scroll-snap-align: start;
   width: 100vw;
   height: 100vh;
-  scroll-snap-align: start;
-  background-color: #ffeead;
+  background-color: #121212;
+}
+#about-section .nav-tabs {
+  color: #dc143c !important;
+  background-color: #111 !important;
+}
+#about-section .nav-tabs .nav-item {
+  color: #121212 !important;
+}
+#about-section .nav-tabs .nav-item button {
+  border: none;
+  color: #111f4d;
+  background-color: #f5ca7b;
+}
+#about-section .nav-tabs .nav-item button:hover {
+  color: #111f4d;
+  background-color: #fbeccf;
+}
+#about-section .nav-tabs .nav-link.active {
+  color: #111f4d;
+  background-color: #fff;
 } /*# sourceMappingURL=about.css.map */

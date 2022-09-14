@@ -1,6 +1,36 @@
-.about-container {
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  background-color: #ffeead;
+@import "../../infrastructure/design/mixins.scss";
+
+#about-section {
+  @include scroll-snap-align;
+
+  @include vw-vh-100;
+  // position: relative;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  background-color: #121212;
+
+  .nav-tabs {
+    color: #dc143c !important;
+    background-color: #111 !important;
+
+    .nav-item {
+      color: #121212 !important;
+
+      button {
+        border: none;
+        color: #111f4d;
+        background-color: #f5ca7b;
+
+        &:hover {
+          color: #111f4d;
+          background-color: #fbeccf;
+        }
+      }
+    }
+    .nav-link.active {
+      color: #111f4d;
+      background-color: #fff;
+    }
+  }
 }

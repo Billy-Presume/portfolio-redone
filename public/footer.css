@@ -1,24 +1,23 @@
 .footer-container {
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
   -ms-scroll-chaining: chained;
   overscroll-behavior: auto;
+  scroll-snap-align: start;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
-  scroll-snap-align: start;
   /* background of the scrollbar except button or resizer */
   /* scrollbar itself */
   /* set button(top and bottom of the scrollbar) */
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-  overflow-x: wrap;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  overflow-x: wrap;
   background-color: aliceblue;
 }
 .footer-container::-webkit-scrollbar {
@@ -39,14 +38,17 @@
   display: none;
 }
 .footer-container .container {
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, auto);
+  grid-auto-flow: row;
   gap: 20px;
-  width: 80%;
-  min-height: 100%;
+  width: 90%;
+  height: 100%;
 }
 .footer-container .container .footer-col {
+  width: 100%;
+  height: 100%;
+  text-align: left;
   padding: 1em;
 }
 .footer-container .container .footer-col :is(.title) {
@@ -54,6 +56,8 @@
 }
 .footer-container .container .footer-col :is(ul) {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer-container .container .footer-col :is(li) {
   color: #000d22;

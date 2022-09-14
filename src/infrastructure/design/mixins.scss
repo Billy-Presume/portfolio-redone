@@ -1,11 +1,60 @@
-@mixin overflow {
+// Display styles
+@mixin vw-vh-100 {
+  width: 100vw;
+  height: 100vh;
+}
+
+@mixin width-height-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@mixin custom-width-height($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin min-width-height($width, $height) {
+  min-width: $width;
+  min-height: $height;
+}
+
+@mixin display-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin display-grid-center {
+  display: grid;
+  place-items: center;
+}
+
+@mixin image-preserve-aspect-ratio {
+  width: 100%;
+  height: auto;
+}
+
+@mixin object-fit-cover {
+  object-fit: cover;
+}
+
+// Overflow and scrolling styles
+@mixin overflow-y {
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-@mixin overflow-behavior {
+@mixin overflow-hidden {
+  overflow: hidden;
+}
+
+@mixin scroll-behavior {
   scroll-behavior: smooth;
   overscroll-behavior: auto;
+}
+
+@mixin scroll-snap-type {
   scroll-snap-type: y mandatory;
 }
 
@@ -45,3 +94,7 @@
     display: none;
   }
 }
+
+// font-family: 'Nunito Sans', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Poppins', sans-serif;

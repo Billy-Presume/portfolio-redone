@@ -1,0 +1,66 @@
+@import "../design/mixins.scss";
+
+.show {
+  background-color: #111 !important;
+}
+
+.mb-3 {
+  height: 60px !important;
+  margin: 0 !important;
+}
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  border-radius: 4px !important;
+  background-color: whitesmoke !important;
+}
+
+.offcanvas-header {
+  color: #111;
+  background-color: #f5ca7b;
+
+  a {
+    width: 10%;
+    margin-left: 0;
+    color: #111;
+
+    &:hover {
+      cursor: pointer;
+      color: #f5ca7b;
+    }
+  }
+}
+
+.offcanvas-body {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 8px !important;
+  font-size: 3wv;
+  font-weight: 500;
+  color: #222;
+  background-color: #111;
+
+  a {
+    width: 10%;
+    // margin-left: 0;
+    color: #f5ca7b;
+
+    &:hover {
+      color: #f37735;
+    }
+  }
+
+  .nav-link.active {
+    color: #fff !important;
+  }
+
+  button {
+    width: auto;
+    padding: 6px 30px;
+    color: #000d22;
+    background-color: #fff;
+  }
+}

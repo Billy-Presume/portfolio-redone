@@ -1,9 +1,22 @@
 @import "./mixins.scss";
 
 .layout-container {
-  @include overflow;
-  @include overflow-behavior;
+  @include overflow-y;
+
+  @include scroll-behavior;
+  @include scroll-snap-type;
   @include scroll-bar-hidden;
+
+  width: 100vw;
+  height: calc(100vh - 60px);
+  top: 60px;
+  position: relative;
+
+  > * {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    scroll-snap-align: start;
+  }
 
   /* All devices (landscape tablets, 768px and down) */
   @media only screen and (max-width: 768px) {

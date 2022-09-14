@@ -1,7 +1,7 @@
 import "./contact.scss";
 
 const Contact = () => {
-  return <div className="contact-container">Contact</div>;
+  return <section id="contact-section">Contact</section>;
 };
 
 export default Contact;

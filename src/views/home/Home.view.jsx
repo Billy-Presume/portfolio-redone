@@ -1,13 +1,6 @@
-import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import {
-  Wrapper,
-  Container,
-  FullScreenImage,
-  BigText,
-  Title,
-} from "../../infrastructure/design/styled-components";
-import SVGComponent from "../../components/SVGwave.component";
+import { init } from "ityped";
+import { Image } from "react-bootstrap";
 
 import "./home.scss";
 
@@ -17,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     init(textRef.current, {
       showCursor: true,
-      backDelay: 1500,
+      backDelay: 2500,
       backSpeed: 60,
       strings: [
         "Instrcutional Designer",
@@ -28,14 +21,33 @@ const Home = () => {
   }, []);
 
   return (
-    <Container className="home-container">
+    <section id="home-section">
+      <div className="video-container">
+        <video
+          className="video"
+          src={require("../../assets/videos/pexels-cottonbro-cg-8818922.mp4")}
+          autoPlay
+          loop
+          muted
+        />
+      </div>
+
       <div className="greetings">
-        <BigText> I'm Billy.</BigText>
+        <h3>Hello,</h3>
+        <h1>I'm Billy.</h1>
         <div className="titles">
           <span ref={textRef} />
         </div>
       </div>
-    </Container>
+      <div className="img">
+        <Image
+          fluid
+          roundedCircle
+          src={require("../../assets/home_images/IMG-8974.jpg")}
+          alt="Billy Presume"
+        />
+      </div>
+    </section>
   );
 };
 

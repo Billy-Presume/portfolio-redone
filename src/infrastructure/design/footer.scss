@@ -1,32 +1,35 @@
 @import "./mixins.scss";
 
 .footer-container {
-  @include overflow;
-  @include overflow-behavior;
+  @include overflow-hidden;
+
+  @include scroll-behavior;
   @include scroll-snap-align;
+  @include scroll-snap-type;
   @include scroll-bar;
 
-  display: flex;
+  @include custom-width-height(100%, fit-content);
+  @include display-flex-center;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
   overflow-x: wrap;
-  width: 100%;
-  height: fit-content;
 
   // background-color: #be9b7b;
   background-color: aliceblue;
 
   .container {
-    box-sizing: border-box;
+    // box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, auto);
+    grid-auto-flow: row;
     gap: 20px;
-    width: 80%;
-    min-height: 100%;
+    // width: 80%;
+    // min-height: 100%;
+    @include custom-width-height(90%, 100%);
     // background-color: aliceblue;
 
     .footer-col {
+      @include width-height-100;
+      text-align: left;
       padding: 1em;
 
       :is(.title) {
@@ -35,6 +38,8 @@
 
       :is(ul) {
         list-style: none;
+        margin: 0;
+        padding: 0;
       }
 
       :is(li) {

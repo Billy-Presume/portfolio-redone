@@ -1,4 +1,4 @@
-import { Container } from "../infrastructure/design/styled-components";
+import NavBar from "./Menu.component";
 import Home from "../views/home/Home.view";
 import About from "../views/about/About.view";
 import Portfolio from "../views/portfolio/Portfolio.view";
@@ -11,16 +11,18 @@ import "../infrastructure/design/layout.scss";
 
 const Layout = () => {
   return (
-    <Container className="layout-container">
-      <Home />
-      <About />
-      <Portfolio />
-      <Services />
-      <Resume />
-      <Contact />
-
-      <Footer className="footer" />
-    </Container>
+    <>
+      <NavBar fixed="top" />
+      <div className="layout-container">
+        <Home id="section" />
+        <About id="section" />
+        <Portfolio id="section" />
+        <Services id="section" />
+        <Resume id="section" />
+        <Contact id="section" />
+        <Footer className="footer" />
+      </div>
+    </>
   );
 };
 
