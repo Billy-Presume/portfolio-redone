@@ -1,86 +1,118 @@
-import {
-  Tab,
-  Tabs,
-  Card,
-  Table,
-  Col,
-  ListGroup,
-  Row,
-  Image,
-  Container,
-  Button,
-  Nav,
-} from "react-bootstrap";
+import { FaBeer } from "react-icons/io5";
 import "./about.scss";
 
 const About = () => {
   return (
     <section id="about-section">
-      <Tabs
-        defaultActiveKey="longer-tab"
+      <aside>
+        <header>Menu</header>
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="ion-bag"></i> <span>Background</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-settings"></i> <span class="">Education</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-briefcase-outline"></i>{" "}
+                <span class="">Work History</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-analytics-outline"></i>{" "}
+                <span class="">Skills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-paper-outline"></i>{" "}
+                <span class="">Volunteering</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-navigate-outline"></i>{" "}
+                <span class="">Passions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ion-ios-medical-outline"></i>{" "}
+                <span class="">Athletics</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <div class="helper">
+          RESIZE THE WINDOW
+          <span>Breakpoints on 900px and 400px</span>
+        </div>
+      </main>
+    </section>
+  );
+};
+
+export default About;
+
+/* <Tabs
+        defaultActiveKey="about-me"
         id="fill-tab-example"
         className="mb-3"
         fill
-        style={{
-          width: "100%",
-          height: "auto",
-          alignSelf: "center",
-          justifySelf: "center",
-          margin: "0",
-          padding: "none",
-          verticalAlign: "top",
-        }}
+        // style={{
+        //   width: "100%",
+        //   height: "auto",
+        //   display: "flex",
+        //   justifyContent: "center",
+        //   alignItems: "center",
+        //   margin: "0",
+        //   padding: "none",
+        //   verticalAlign: "top",
+        // }}
       >
-        <Tab eventKey="aboutme" title="About me" className="about-me-tab">
-          <Container>
-            <Row
-              style={{
-                width: "fit-content",
-                height: "auto",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                alignSelf: "center",
-                justifySelf: "center",
-                borderRadius: "8px",
-                backgroundColor: "white",
-                margin: "0",
-                padding: "none",
-              }}
-            >
-              <Col
-                style={{
-                  padding: "0",
-                }}
-              >
-                <Card
-                  bg="light"
-                  text="dark"
-                  style={{
-                    width: "100%",
-                    height: "auto",
-                    alignSelf: "center",
-                    justifySelf: "center",
-                    margin: "0",
-                    padding: "none",
-                  }}
-                  className="mb-2"
-                >
-                  <Card.Body>
-                    <Card.Title>My Background</Card.Title>
-                    <Card.Text>
-                      I am a passionate and results-oriented eLearning
-                      Developer, Instructional Designer, and Web Developer with
-                      3+ years of experience delivering superior learning
-                      solutions impacting 3000+ learners. I have a background in
-                      higher education and a commitment to accessibility and
-                      sustainability.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+        <Tab
+          eventKey="about-me"
+          title="About me"
+          className="about-me-tab"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div className="about-me-tab-content">
+            <div className="about-me-tab-card">
+              <h3>My Background</h3>I am a passionate and results-oriented
+              eLearning Developer, Instructional Designer, and Web Developer
+              with 3+ years of experience delivering superior learning solutions
+              impacting 3000+ learners. I have a background in higher education
+              and a commitment to accessibility and sustainability. Full Name:{" "}
+              <strong>Billy Gaspard Pr&eacute;sum&eacute;</strong>
+              Age: <strong>23</strong>
+              Highest Education: <strong>Bachelor's Degree</strong>
+              Profession:{" "}
+              <strong>
+                Instructional Designer, eLearning Developer, and Web Developer
+              </strong>
+            </div>
+            <div className="about-me-tab-image-container">
+              <img
+                // fluid
+                // thumbnail
+                src={require("../../assets/home_images/IMG-8982.jpg")}
+                alt="Billy Presume"
+              />
+            </div>
+          </div>
         </Tab>
         <Tab
           eventKey="longer-tab"
@@ -364,9 +396,4 @@ const About = () => {
             </Table>
           </Container>
         </Tab>
-      </Tabs>
-    </section>
-  );
-};
-
-export default About;
+      </Tabs> */

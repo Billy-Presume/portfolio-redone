@@ -13,7 +13,7 @@ const Home = () => {
       backDelay: 2500,
       backSpeed: 60,
       strings: [
-        "Instrcutional Designer",
+        "Instructional Designer",
         "E-Learning Developer",
         "Web Developer",
       ],

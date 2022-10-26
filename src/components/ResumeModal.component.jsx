@@ -3,9 +3,9 @@ import { Document, Page } from "react-pdf";
 import { Modal, Button } from "react-bootstrap";
 
 function ResumeModal(toggleShow) {
-//   const handleClose = () => {
-//     toggleShow(false);
-//   };
+  //   const handleClose = () => {
+  //     toggleShow(false);
+  //   };
 
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -33,7 +33,7 @@ function ResumeModal(toggleShow) {
       <Modal.Body>
         <div>
           <Document
-                      file={require("../assets/resume/Billy Presume - resume.pdf")}
+            file={require("../assets/resume/Billy Presume - resume.pdf")}
             onLoadSuccess={onDocumentLoadSuccess}
           >
             <Page pageNumber={pageNumber} />

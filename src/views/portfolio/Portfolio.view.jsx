@@ -13,7 +13,7 @@ const Portfolio = () => {
           muted
         />
       </div>
-      <div className="portfolio-content">
+      {/* <div className="portfolio-content">
         <Carousel className="carousel">
           <Carousel.Item interval={10000}>
             <div className="carousel-item-content-container">
@@ -104,7 +104,7 @@ const Portfolio = () => {
             </div>
           </Carousel.Item>
         </Carousel>
-      </div>
+      </div> */}
     </section>
   );
 };

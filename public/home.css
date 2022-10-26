@@ -61,17 +61,52 @@
     opacity: 0;
   }
 }
+@media (max-width: 1024px) {
+  #home-section .greetings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    left: 0;
+    top: 5%;
+  }
+  #home-section .greetings h3 {
+    font-size: 6vw;
+  }
+  #home-section .greetings h1 {
+    font-size: 8vw;
+  }
+  #home-section .greetings .titles,
+  #home-section .greetings .ityped-cursor {
+    font-size: 4vw;
+  }
+}
 #home-section .img {
   position: absolute;
-  top: 22%;
+  top: 23%;
   right: 5%;
-  width: 20%;
-  height: 20%;
+  width: 23vw;
+  height: 23vw;
 }
 #home-section .img img {
+  width: 23vw;
+  height: 23vw;
   border-radius: 50%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+}
+@media (max-width: 1024px) {
+  #home-section .img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 25%;
+    top: 75%;
+    right: 40%;
+  }
 } /*# sourceMappingURL=home.css.map */

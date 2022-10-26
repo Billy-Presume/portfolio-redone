@@ -1,28 +1,62 @@
 #about-section {
   scroll-snap-align: start;
-  background-color: #121212;
-}
-#about-section .nav-tabs {
-  background-color: #111 !important;
-}
-#about-section .nav-tabs .nav-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #121212 !important;
-  font-size: 1.2vw;
+  flex-direction: row;
+  background: url("../../assets/about_images/12804210_5053309.jpg") no-repeat center center/cover;
 }
-#about-section .nav-tabs .nav-item button {
-  width: 70%;
-  border: none;
-  color: #111f4d;
-  background-color: #f5ca7b;
+#about-section a {
+  text-decoration: none;
+  transition: all 0.6s ease;
 }
-#about-section .nav-tabs .nav-item button:hover {
-  color: #111f4d;
-  background-color: #fbeccf;
+#about-section a:hover {
+  transition: all 0.6s ease;
 }
-#about-section .nav-tabs .nav-link.active {
-  color: #111f4d;
-  background-color: #fff;
-} /*# sourceMappingURL=about.css.map */
+#about-section aside {
+  width: 15vw;
+  background-color: #5bc995;
+}
+#about-section aside header {
+  background-color: #09f;
+  width: 100%;
+  display: block;
+  padding: 0.75em 1em;
+}
+#about-section aside nav {
+  position: fixed;
+  background-color: #19222a;
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.2em;
+  overflow: auto;
+  padding-bottom: 6em;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+#about-section aside nav ul {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+#about-section aside nav ul li {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+#about-section aside nav ul li a {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75em;
+  padding: 1.05em 1em;
+  position: relative;
+  display: block;
+}
+#about-section aside nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.6s ease;
+}
+#about-section main {
+  background-color: #ffea92;
+  width: 85vw;
+}/*# sourceMappingURL=about.css.map */
