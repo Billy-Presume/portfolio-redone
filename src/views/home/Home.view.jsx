@@ -43,7 +43,7 @@ const Home = () => {
         <Image
           fluid
           roundedCircle
-          src={require("../../assets/home_images/IMG-8974.jpg")}
+          src={require("../../assets/home_images/IMG-8974-removebg-preview.png")}
           alt="Billy Presume"
         />
       </div>

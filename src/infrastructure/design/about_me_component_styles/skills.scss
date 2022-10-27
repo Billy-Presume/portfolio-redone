@@ -1,0 +1,6 @@
+@import "../mixins.scss";
+
+.skills{
+     @include custom-width-height(100%, 100%);
+    background-color: rgb(210, 90, 219);
+}

@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 #home-section .greetings {
   width: auto;
@@ -49,7 +49,7 @@
   -webkit-animation: blink 0.5s infinite;
   animation: blink 0.5s infinite;
   -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+          animation-direction: alternate;
 }
 @keyframes blink {
   100% {
@@ -79,7 +79,7 @@
     font-size: 8vw;
   }
   #home-section .greetings .titles,
-  #home-section .greetings .ityped-cursor {
+#home-section .greetings .ityped-cursor {
     font-size: 4vw;
   }
 }
@@ -87,6 +87,8 @@
   position: absolute;
   top: 23%;
   right: 5%;
+  border-radius: 50%;
+  background-color: #111;
   width: 23vw;
   height: 23vw;
 }
@@ -95,9 +97,9 @@
   height: 23vw;
   border-radius: 50%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 @media (max-width: 1024px) {
   #home-section .img {
@@ -109,4 +111,4 @@
     top: 75%;
     right: 40%;
   }
-} /*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

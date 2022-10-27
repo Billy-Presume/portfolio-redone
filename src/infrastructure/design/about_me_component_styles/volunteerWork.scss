@@ -1,0 +1,6 @@
+@import "../mixins.scss";
+
+.volunteer-work{
+     @include custom-width-height(100%, 100%);
+    background-color: teal;
+}

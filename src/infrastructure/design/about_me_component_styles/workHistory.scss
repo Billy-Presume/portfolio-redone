@@ -1,0 +1,6 @@
+@import "../mixins.scss";
+
+.work-history{
+     @include custom-width-height(100%, 100%);
+    background-color: rosybrown;
+}

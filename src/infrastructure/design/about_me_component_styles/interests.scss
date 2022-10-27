@@ -1,0 +1,6 @@
+@import "../mixins.scss";
+
+.interests{
+     @include custom-width-height(100%, 100%);
+    background-color: mediumseagreen;
+}
